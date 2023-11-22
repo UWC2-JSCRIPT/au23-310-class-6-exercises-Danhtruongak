@@ -8,8 +8,10 @@ $(".today-list").on("click", "li", function () {
  * Delete element when delete link clicked
  */
 $(".today-list").on("click", ".delete", function () {
-  $(this).parent().remove();
+  $(this).parent().fadeOut(3000);
   console.log($(this));
+  //Extra Credit://
+  //1 point: When you click delete on an item, make it fade out.//
 });
 /**
  * Adds new list item to <ul>
